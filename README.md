@@ -30,4 +30,4 @@ Adicionalmente, en el script también se puede encontrar la explicación línea 
 3. En el procedimiento, lo que se hizo fue simplemente modificar **fecha_inicio** para que, en caso de que viniera como null por defecto, pasara por un COALESCE que, posteriormente, haría que la columna tomara el valor retornado por **CURDATE()**... Es decir, la fecha actual. Luego, se asignó a **fecha_fin** el valor resultante de fecha_inicio + 30 días.
 
 
-Después de haber creado el trigger, se realizaron pruebas para verificar que funcionara correctamente. **Las inserciones realizadas de prueba se pueden encontrar en el script SQL de la creación del trigger.**
+Después de haber creado el trigger, se realizaron pruebas para verificar que funcionara correctamente. **Las inserciones realizadas como prueba se pueden encontrar en el script SQL de la creación del trigger junto con una consulta para verificar que todo haya salido bien**.
