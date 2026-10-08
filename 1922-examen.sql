@@ -35,7 +35,7 @@ VALUES ((SELECT MIN(id_usuario) FROM usuarios), (SELECT MIN(id_membresia) FROM m
 	   ((SELECT MIN(id_usuario) FROM usuarios), (SELECT MAX(id_membresia) FROM membresias), '2026-11-10', NULL);
 -- Esta última prueba es para que se vea que aunque fecha_fin venga nula, se calculará según fecha_inicio.
        
--- Por último, verificamos que si se hayan insertado correctamente y que el trigger haya modificado las fechas.
 
 SELECT * FROM suscripciones
 ORDER BY 1 DESC;
+-- Por último, verificamos que si se hayan insertado correctamente y que el trigger haya modificado las fechas.
