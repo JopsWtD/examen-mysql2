@@ -1,3 +1,5 @@
+USE coworking_grupo5;
+
 DELIMITER $$
 
 DROP TRIGGER IF EXISTS trg_pagos_ai_crear_factura$$
