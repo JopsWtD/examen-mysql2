@@ -2,7 +2,7 @@ USE coworking_grupo5;
 
 DELIMITER $$
 
-DROP TRIGGER IF EXISTS trg_pagos_ai_crear_factura$$
+DROP TRIGGER IF EXISTS trg_suscripciones_bi_fecha_vencimiento$$
 -- En caso de que exista, se borra un trigger que fue creado en el proyecto para evitar conflictos.
 
 DROP TRIGGER IF EXISTS trg_calcular_fecha_vencimiento$$
@@ -24,6 +24,7 @@ BEGIN
     -- Se añaden los 30 días a la fecha de inicio y se guarda ese valor en la fecha fin.
 END$$
 
+DELIMITER ;
 
 -- Como verificación de que el trigger funciona correctamente, a continuación se realizarán inserciones de prueba.
 
